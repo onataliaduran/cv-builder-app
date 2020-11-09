@@ -29,7 +29,7 @@ There is a provisional landing page for cviiing, that will be migrated to this r
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-:gear: ## Available Scripts
+## :gear: Available Scripts
 
 In the project directory, you can run:
 
