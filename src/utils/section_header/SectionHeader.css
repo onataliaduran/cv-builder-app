@@ -1,0 +1,24 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+}
+
+.titles {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.small-circle {
+    background-color: #000000;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

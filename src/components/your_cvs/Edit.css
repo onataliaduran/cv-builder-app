@@ -1,0 +1,16 @@
+.Edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Edit > div:first-child {
+    background-color: #F5F5FB;
+    height: 900px;
+}
+
+.Edit > div:last-child {
+    background-color: #F5F5FB;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}

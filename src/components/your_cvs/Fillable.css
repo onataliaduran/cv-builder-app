@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1em 3em;
+    border-radius: 6px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.label {
+    display: block;
+    color: rgb(94, 94, 94);
+    font-size: 0.7rem;
+}
