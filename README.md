@@ -6,7 +6,7 @@ This is a soon-to-be CV-builder app called cviiing. The whole idea behind cviiin
 
 There is a provisional landing page for cviiing, that will be migrated to this repository in the future.
 
-[Check The Landing Page](https://cviiing-landing-page.vercel.app/)
+:pushpin: [Check The Landing Page](https://cviiing-landing-page.vercel.app/)
 
 ## Some Mockups
 
