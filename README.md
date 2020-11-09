@@ -8,6 +8,8 @@ There is a provisional landing page for cviiing, that will be migrated to this r
 
 :pushpin: [Check The Landing Page](https://cviiing-landing-page.vercel.app/)
 
+![app landing page](./src/assets/img/readme/cviiing-preview.png)
+
 ## Some Mockups
 
 * User docs list
@@ -26,8 +28,6 @@ There is a provisional landing page for cviiing, that will be migrated to this r
 
 ![app mockup](./src/assets/img/readme/cviiing-editCV-mockup.png)
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## :gear: Available Scripts
 
