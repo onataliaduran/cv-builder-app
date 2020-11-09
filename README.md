@@ -1,3 +1,32 @@
+# cviiing app
+
+This is a soon-to-be CV-builder app called cviiing. The whole idea behind cviiing is to create an app that turns the tiresome task of creating, editing and sharing a CV, into an easy-peasy job. 
+
+## Provisional Landing Page 
+
+There is a provisional landing page for cviiing, that will be migrated to this repository in the future.
+
+[Check The Landing Page](https://cviiing-landing-page.vercel.app/)
+
+## Some Mockups
+
+* List of user docs
+
+![app mockup](./src/assets/img/readme/cviiing-docsList-mockup.png)
+
+* View when a user want to see a preview of a document
+
+![app mockup](./src/assets/img/readme/cviiing-cvPreview-mockup.png)
+
+* View when the user clicks on the "three dots" button on the preview section, in case the user wants to edit, delete, duplicate, etc, the document
+
+![app mockup](./src/assets/img/readme/cviiing-cvPreview-moreOptions-mockup.png)
+
+* View for the edit component
+
+![app mockup](./src/assets/img/readme/cviiing-editCV-mockup.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,32 +66,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
