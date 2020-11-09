@@ -1,6 +1,6 @@
 # cviiing app
 
-This is a soon-to-be CV-builder app called cviiing. The whole idea behind cviiing is to create an app that turns the tiresome task of creating, editing and sharing a CV, into an easy-peasy job. 
+This is a soon-to-be CV-builder app called cviiing. The whole idea behind cviiing is to create an app to turn the tiresome task of creating, editing and sharing a CV, into an easy-peasy job. 
 
 ## Provisional Landing Page 
 
@@ -10,15 +10,15 @@ There is a provisional landing page for cviiing, that will be migrated to this r
 
 ## Some Mockups
 
-* List of user docs
+* User docs list
 
 ![app mockup](./src/assets/img/readme/cviiing-docsList-mockup.png)
 
-* View when a user want to see a preview of a document
+* View when a user wants to see a preview of a document
 
 ![app mockup](./src/assets/img/readme/cviiing-cvPreview-mockup.png)
 
-* View when the user clicks on the "three dots" button on the preview section, in case the user wants to edit, delete, duplicate, etc, the document
+* View when the user clicks on the "three dots" button on the preview section (It will display options for the user to edit, delete, duplicate, etc, the document)
 
 ![app mockup](./src/assets/img/readme/cviiing-cvPreview-moreOptions-mockup.png)
 
@@ -29,7 +29,7 @@ There is a provisional landing page for cviiing, that will be migrated to this r
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+:gear: ## Available Scripts
 
 In the project directory, you can run:
 
