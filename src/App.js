@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import Menu from './components/menu/Menu';
 
+import Layout from './components/layout/Layout';
 import Edit from './components/your_cvs/Edit';
 
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <Edit />
+      <Layout>
+        <Edit />
+      </Layout>
     </div>
   );
 }
