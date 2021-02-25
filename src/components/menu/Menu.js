@@ -1,14 +1,23 @@
 import './Menu.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { FiGrid, FiFile, FiFolder, FiClipboard, FiChevronRight } from "react-icons/fi";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-function Menu() {
+function Menu(props) {
+
+    let navItemActive = false;
+    const [classes, setClasses] = useState(['Menu__navItem', 'inactive']);
+
+    const colorHandler = () => {
+        navItemActive = !navItemActive;
+        navItemActive ? setClasses(['Menu__navItem', 'active']) :setClasses(['Menu__navItem', 'inactive']); 
+    }
+
     return (
         <div className="Menu">
             
-            <div className="Menu__toggler">
+            <div onClick={props.handler} className="Menu__toggler">
                 <MdChevronRight className="Menu__togglerIcon"/>
             </div>
 
@@ -19,7 +28,7 @@ function Menu() {
 
                 <div className="Menu__navGroup">
                     <div>
-                        <Link to="/" className="Menu__navItem">
+                        <Link to="/" onClick={colorHandler} className={classes.join(' ')}>
                             <FiGrid className="Menu__navIcon"/>
                             <p className="Menu__navTxt">Overview</p>
                         </Link>

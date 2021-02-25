@@ -2,4 +2,8 @@
     display: grid;
     grid-template-columns: 15% 85%;
 }
-  
+
+.App__shrankMenu  {
+    display: grid;
+    grid-template-columns: 5% 95%;
+}

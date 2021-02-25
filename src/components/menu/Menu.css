@@ -13,6 +13,7 @@
     top: 9px;
     right: -7px;
     z-index: 2;
+    cursor: pointer;
 }
 
 .Menu__togglerIcon {
@@ -57,6 +58,16 @@
     color: #fff;
 }
 
+.inactive {
+    background-color: #fff;
+    color: #CCCCD0;
+}
+
+.active {
+    background-color: #6a0572;
+    color: #fff;
+}
+
 .Menu__navIcon {
     font-size: 1.3rem;
     margin-right: .5em;
@@ -65,3 +76,4 @@
 .Menu__navTxt {
     display: inline-block;
 }
+
