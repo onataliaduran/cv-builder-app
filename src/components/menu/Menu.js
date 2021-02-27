@@ -1,7 +1,9 @@
 import './Menu.css';
+// import styled from 'styled-components';
+
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { FiGrid, FiFile, FiFolder, FiClipboard, FiChevronRight } from "react-icons/fi";
+import { FiGrid, FiFile, FiFolder, FiClipboard } from "react-icons/fi";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 function Menu(props) {
@@ -34,7 +36,7 @@ function Menu(props) {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/yourDocs" className="Menu__navItem">
+                        <Link to="/docs" className="Menu__navItem">
                             <FiFile className="Menu__navIcon"/>
                             <p className="Menu__navTxt">Docs</p>
                         </Link>

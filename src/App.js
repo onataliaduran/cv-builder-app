@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Menu from './components/menu/Menu';
 import Overview from './components/overview/Overview';
-import Edit from './components/your_cvs/Edit';
+import Docs from './components/Docs';
+// import Edit from './components/your_cvs/Edit';
 import JobTracker from './components/job_tracker/JobTracker';
 
 
@@ -28,8 +29,8 @@ function App() {
             <Route exact path="/">
               <Overview />
             </Route>
-            <Route path="/yourDocs">
-              <Edit />
+            <Route path="/docs">
+              <Docs />
             </Route>
             <Route path="/jobTracker">
               <JobTracker />
