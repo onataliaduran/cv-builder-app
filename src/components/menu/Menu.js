@@ -3,8 +3,8 @@ import './Menu.css';
 
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { FiGrid, FiFile, FiFolder, FiClipboard } from "react-icons/fi";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { FiGrid, FiFile, FiClipboard } from "react-icons/fi";
+import { MdChevronRight } from "react-icons/md";
 
 function Menu(props) {
 

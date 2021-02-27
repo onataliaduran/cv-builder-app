@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container, Subnav, SubnavItem, ItemTxt } from './Docs-styled-elements';
+import axios from 'axios';
 
 import Resumes from './Resumes';
 import CoverLetters from './CoverLetters';
-{/* <div></div> */}
+
 
 const Docs = () => {
+
+    const [content, setContent] = useState(0);
+
+    useEffect(() => {
+        console.log('UseEffect', content);
+        // SIDE EFFECT
+        const getContent = async () => {
+            try {
+                const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+                console.log(response);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        getContent();
+        return () => {
+            console.log('Cleanup UseEffect');
+        }
+    }, [content]);
+
+
     return (
         <Router>
             <Container>
                 <h1>Docs</h1>
                 <Subnav>
-                    <SubnavItem to="/docs/resumes">
+                    <SubnavItem onClick={() => setContent(content + 1)} to="/docs/resumes">
                         <ItemTxt>Resumes</ItemTxt>
                     </SubnavItem>
                     <SubnavItem to="/docs/coverletters">
