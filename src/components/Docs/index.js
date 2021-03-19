@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container, Subnav, SubnavItem, ItemTxt } from './Docs-styled-elements';
-import axios from 'axios';
+// import axios from 'axios';
 
 import Resumes from './Resumes';
 import CoverLetters from './CoverLetters';
@@ -9,24 +9,24 @@ import CoverLetters from './CoverLetters';
 
 const Docs = () => {
 
-    const [content, setContent] = useState(0);
+    // const [content, setContent] = useState(0);
 
-    useEffect(() => {
-        console.log('UseEffect', content);
-        // SIDE EFFECT
-        const getContent = async () => {
-            try {
-                const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-                console.log(response);
-            } catch (error) {
-                console.error(error);
-            }
-        }
-        getContent();
-        return () => {
-            console.log('Cleanup UseEffect');
-        }
-    }, [content]);
+    // useEffect(() => {
+    //     console.log('UseEffect', content);
+    //     // SIDE EFFECT
+    //     const getContent = async () => {
+    //         try {
+    //             const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    //             console.log(response);
+    //         } catch (error) {
+    //             console.error(error);
+    //         }
+    //     }
+    //     getContent();
+    //     return () => {
+    //         console.log('Cleanup UseEffect');
+    //     }
+    // }, [content]);
 
 
     return (
@@ -34,7 +34,7 @@ const Docs = () => {
             <Container>
                 <h1>Docs</h1>
                 <Subnav>
-                    <SubnavItem onClick={() => setContent(content + 1)} to="/docs/resumes">
+                    <SubnavItem to="/docs/resumes">
                         <ItemTxt>Resumes</ItemTxt>
                     </SubnavItem>
                     <SubnavItem to="/docs/coverletters">
