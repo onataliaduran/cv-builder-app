@@ -1,56 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container, Subnav, SubnavItem, ItemTxt } from './Docs-styled-elements';
-// import axios from 'axios';
 
 import Resumes from './Resumes';
 import CoverLetters from './CoverLetters';
+import Preview from './Preview';
 
 
 const Docs = () => {
 
-    // const [content, setContent] = useState(0);
+    const [preview, setPreview] = useState(false);
 
-    // useEffect(() => {
-    //     console.log('UseEffect', content);
-    //     // SIDE EFFECT
-    //     const getContent = async () => {
-    //         try {
-    //             const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    //             console.log(response);
-    //         } catch (error) {
-    //             console.error(error);
-    //         }
-    //     }
-    //     getContent();
-    //     return () => {
-    //         console.log('Cleanup UseEffect');
-    //     }
-    // }, [content]);
-
+    const previewHandler = () => {
+        setPreview(!preview);
+    }
 
     return (
         <Router>
-            <Container>
-                <h1>Docs</h1>
-                <Subnav>
-                    <SubnavItem to="/docs/resumes">
-                        <ItemTxt>Resumes</ItemTxt>
-                    </SubnavItem>
-                    <SubnavItem to="/docs/coverletters">
-                        <ItemTxt>Cover Letters</ItemTxt>
-                    </SubnavItem>
-                </Subnav>
+            <Container splited={preview}>
                 <div>
-                    <Switch>
-                        <Route exact path="/docs/resumes">
-                            <Resumes />
-                        </Route>
-                        <Route path="/docs/coverletters">
-                            <CoverLetters />
-                        </Route>
-                    </Switch>
+                    <h1>Docs</h1>
+                    <Subnav>
+                        <SubnavItem to="/docs/resumes">
+                            <ItemTxt>Resumes</ItemTxt>
+                        </SubnavItem>
+                        <SubnavItem to="/docs/coverletters">
+                            <ItemTxt>Cover Letters</ItemTxt>
+                        </SubnavItem>
+                    </Subnav>
+                    <div>
+                        <Switch>
+                            <Route exact path="/docs/resumes">
+                                <Resumes previewHandler={previewHandler} />
+                            </Route>
+                            <Route path="/docs/coverletters">
+                                <CoverLetters />
+                            </Route>
+                        </Switch>
+                    </div>
                 </div>
+                { preview && <Preview /> } 
             </Container>
         </Router>
     )

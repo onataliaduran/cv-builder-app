@@ -3,6 +3,8 @@ import { Link as LinkRouter } from 'react-router-dom';
 
 export const Container = styled.div`
     padding: 2rem;
+    display: grid;
+    grid-template-columns: ${props => props.splited ? "1fr 1fr" : "1fr"};
 `;
 
 export const Subnav = styled.div`
@@ -23,4 +25,6 @@ export const ItemTxt = styled.p`
         border-bottom: 4px solid #9a0f98;
     }
 `;
+
+
 

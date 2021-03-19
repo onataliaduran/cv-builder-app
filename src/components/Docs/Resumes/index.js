@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { Grid, SingleResumen } from './Resumes-styled-elements';
 
-const Resumes = () => {
+const Resumes = ({previewHandler}) => {
 
     const [content, setContent] = useState([]);
 
@@ -15,7 +15,7 @@ const Resumes = () => {
                 const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
                 const {data} = response;
                 console.log(data);
-                setContent(data)
+                setContent(data);
             } catch (error) {
                 console.error(error);
             }
@@ -32,7 +32,7 @@ const Resumes = () => {
         <div>
             <h2>Resumes</h2>
             <Grid>
-                { content.map(doc => <SingleResumen key={doc.id}>CV</SingleResumen>) }
+                { content.map(doc => <SingleResumen onClick={ () => previewHandler() } key={doc.id}>CV</SingleResumen>) }
             </Grid>
         </div>
     )

@@ -11,6 +11,7 @@ export const SingleResumen = styled.div`
     width: 9rem;
     height: 12rem;
     border-radius: .5rem;
+    cursor: pointer;
     box-shadow:
         0 10.6px 15px -27px rgba(0, 0, 0, 0.024),
         0 17.5px 44.3px -27px rgba(0, 0, 0, 0.035),
