@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container, Subnav, SubnavItem, ItemTxt } from './Docs-styled-elements';
+import { Container, Pv, Subnav, SubnavItem, ItemTxt } from './Docs-styled-elements';
 
 import Resumes from './Resumes';
 import CoverLetters from './CoverLetters';
@@ -39,7 +39,8 @@ const Docs = () => {
                         </Switch>
                     </div>
                 </div>
-                { preview && <Preview /> } 
+                <Pv>{ preview && <Preview /> }</Pv>
+                
             </Container>
         </Router>
     )

@@ -7,6 +7,12 @@ export const Container = styled.div`
     grid-template-columns: ${props => props.splited ? "1fr 1fr" : "1fr"};
 `;
 
+export const Pv = styled.div`
+    height: 90vh;
+    position: sticky;
+    top: 0;
+`;
+
 export const Subnav = styled.div`
     display: flex;
     font-weight: 500;
